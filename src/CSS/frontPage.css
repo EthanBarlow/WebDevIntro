@@ -1,0 +1,135 @@
+
+/* Styling for the front page of the site */
+
+:root {
+    --main-nav-bg-color: #629755;
+    --main-nav-txt: #d8d8d8;
+    --main-nav-hover: #84b977;
+    --main-nav-hover-txt: #323232;
+    --light-blue-gray: #214283;
+    --desc-bg: #9876aa;
+    --headers-bg: #2b2b2b
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar{
+    width:100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    background-color: var(--main-nav-bg-color);
+    z-index: 10;
+}
+
+/*TODO: Fix the anchors so that when clicked, the heading text is positioned just below the nav bar*/
+
+.navbar a{
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: var(--main-nav-txt);
+}
+
+.navbar a:hover{
+    background-color: var(--main-nav-hover);
+    transform: scale(1.1);
+    color: var(--main-nav-hover-txt);
+}
+
+.mainContainer{
+    justify-content: space-between; /*Come back to this point to figure out spacing*/
+    -webkit-justify-content: space-between; /*Come back to this point to figure out spacing*/
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    z-index: 1;
+}
+
+.descriptionContainer{
+    margin: 1em;
+    display:flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:200px;
+    background-color: var(--light-blue-gray);
+    border: thin solid var(--main-nav-hover);
+    border-radius: 10px;
+}
+
+.descriptionHeader{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--headers-bg);
+    color: var(--main-nav-txt);
+    padding: 0.5em;
+    margin: 0.25em;
+    border-radius: 5px;
+}
+
+.descriptionBody{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    background-color: var(--desc-bg);
+    margin: 0.25em;
+    border-radius: 5px;
+}
+
+.arrowIcon{
+    margin-left: auto;
+}
+
+.arrowIcon a i{
+    text-decoration: none;
+    opacity: 0.5;
+    animation-name: arrowPulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.arrowIcon a:hover i{
+    animation-play-state: paused;
+    opacity:0.7;
+}
+
+.fa-arrow-alt-circle-right{
+    color:var(--main-nav-hover);
+}
+
+#home{
+
+}
+
+#about{
+
+}
+
+#htmlDesc{
+
+}
+
+#cssDesc{
+
+}
+
+#game{
+
+}
+
+@keyframes arrowPulse {
+    0% { transform:scale(0.8); }
+    50% { transform:scale(1.2); }
+    100% { transform:scale(0.8); }
+}

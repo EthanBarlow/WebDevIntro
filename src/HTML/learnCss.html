@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CSS/content.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+</head>
+<body>
+    <a href="index.html" class="homeButton">Home</a>
+    <h1 id="top">Learn some CSS</h1>
+
+    <!--Example-->
+    <div class="description">
+        The description of several CSS methods will be located in a box like this one.
+    </div>
+    <div class="code">
+        The implementation of the css will appear like this.
+    </div>
+    <div class="display">
+        The resulting document from the code example will be displayed similarly to this.
+    </div>
+
+    <!--Text properties-->
+    <div class="description">
+        First, we will cover some <span class="bold">text properties</span>. The CSS used in these examples will mostly be inline CSS for
+        simplicity. You may choose from many text properties such as: color, alignment, decoration, and transformation
+        among others.
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Color</h3>
+    </div>
+    <div class="code">
+<span>/*The name of a color may be provided*/
+&lt;p style="color: orange"&gt;Color&lt;/p&gt;
+
+/*The hexadecimal value of a color may be provided*/
+&lt;p style="color: #98aa12"&gt;Color&lt;/p&gt;
+
+/*The rgb(red value, green value, blue value) may be specified to determine the color*/
+&lt;p style="color: rgb(150,0,170)"&gt;Color&lt;/p&gt;
+
+/*The rgba(red value, green value, blue value, alpha or opacity value) may be specified to determine the color and transparency*/
+&lt;p style="color: rgba(150,0,170, 0.3)"&gt;Color&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="color: orange">Color</p>
+        <p style="color: #98aa12">Color</p>
+        <p style="color: rgb(150,0,170)">Color</p>
+        <p style="color: rgba(150,0,170, 0.3)">Color</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Alignment</h3>
+    </div>
+    <div class="code">
+<span>/*Pushed to the left*/
+&lt;p style="text-align: left"&gt;Alignment&lt;/p&gt;
+
+/*Centered in parent container*/
+&lt;p style="text-align: center"&gt;Alignment&lt;/p&gt;
+
+/*Pushed to the right*/
+&lt;p style="text-align: right"&gt;Alignment&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="text-align: left">Alignment</p>
+        <p style="text-align: center">Alignment</p>
+        <p style="text-align: right">Alignment</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Decoration</h3>
+    </div>
+    <div class="code">
+<span>/*Often used to remove any decoration from links to other pages*/
+&lt;p style="text-decoration: none"&gt;Text decoration&lt;/p&gt;
+
+/*Puts a line above the text*/
+&lt;p style="text-decoration: overline"&gt;Text decoration&lt;/p&gt;
+
+/*Crosses out the letters*/
+&lt;p style="text-decoration: line-through"&gt;Text decoration&lt;/p&gt;
+
+/*Underlines the words*/
+&lt;p style="text-decoration: underline"&gt;Text decoration&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="text-decoration: none">Text decoration</p>
+        <p style="text-decoration: overline">Text decoration</p>
+        <p style="text-decoration: line-through">Text decoration</p>
+        <p style="text-decoration: underline">Text decoration</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Transformation</h3>
+    </div>
+    <div class="code">
+<span>/*Capitalizes every letter*/
+&lt;p style="text-transform: uppercase"&gt;Text transformation&lt;/p&gt;
+
+/*Puts every letter in lowercase*/
+&lt;p style="text-transform: lowercase"&gt;Text transformation&lt;/p&gt;
+
+/*Capitalizes each word*/
+&lt;p style="text-transform: capitalize"&gt;Text transformation&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="text-transform: uppercase">Text transformation</p>
+        <p style="text-transform: lowercase">Text transformation</p>
+        <p style="text-transform: capitalize">Text transformation</p>
+    </div>
+
+    <!--Font properties-->
+    <div class="description">
+        Now, for some <span class="bold">font properties</span>. The CSS used in these examples will mostly be inline CSS for
+        simplicity. There are many options for font properties such as: style, variant, weight, size, and family.
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Style</h3>
+    </div>
+    <div class="code">
+<span>/*Normal text*/
+&lt;p style="font-style: normal"&gt;Style&lt;/p&gt;
+
+/*Italicized text*/
+&lt;p style="font-style: italic"&gt;Style&lt;/p&gt;
+
+/*Oblique - style: similar to italic text*/
+&lt;p style="font-style: oblique"&gt;Style&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="font-style: normal">Style</p>
+        <p style="font-style: italic">Style</p>
+        <p style="font-style: oblique">Style</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Variant</h3>
+    </div>
+    <div class="code">
+<span>/*Normal text*/
+&lt;p style="font-variant: normal"&gt;Font variant&lt;/p&gt;
+
+/*Every letter after the first is capitalized and shrunk*/
+&lt;p style="font-variant: small-caps"&gt;Font variant&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="font-variant: normal">Font variant</p>
+        <p style="font-variant: small-caps">Font variant</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Weight</h3>
+    </div>
+    <div class="code">
+<span>/*Normal text*/
+&lt;p style="font-weight: normal"&gt;Font weight&lt;/p&gt;
+
+/*Bold text*/
+&lt;p style="font-weight: bold"&gt;Font weight&lt;/p&gt;
+
+/*Bolder text*/
+&lt;p style="font-weight: bolder"&gt;Font weight&lt;/p&gt;
+
+/*Lighter text*/
+&lt;p style="font-weight: lighter"&gt;Font weight&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="font-weight: normal">Font weight</p>
+        <p style="font-weight: bold">Font weight</p>
+        <p style="font-weight: bolder">Font weight</p>
+        <p style="font-weight: lighter">Font weight</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Size</h3>
+    </div>
+    <div class="code">
+<span>/*Tiny text*/
+&lt;p style="font-size: xx-small"&gt;Font size&lt;/p&gt;
+
+/*Mini text*/
+&lt;p style="font-size: x-small"&gt;Font size&lt;/p&gt;
+
+/*Small text*/
+&lt;p style="font-size: small"&gt;Font size&lt;/p&gt;
+
+/* King-of small text*/
+&lt;p style="font-size: smaller"&gt;Font size&lt;/p&gt;
+
+/*Medium text*/
+&lt;p style="font-size: medium"&gt;Font size&lt;/p&gt;
+
+/* Large text*/
+&lt;p style="font-size: large"&gt;Font size&lt;/p&gt;
+
+/* Larger text*/
+&lt;p style="font-size: larger"&gt;Font size&lt;/p&gt;
+
+/* Even larger text*/
+&lt;p style="font-size: x-large"&gt;Font size&lt;/p&gt;
+
+/* Largest text*/
+&lt;p style="font-size: xx-large"&gt;Font size&lt;/p&gt;
+
+/* Size in pixels*/
+&lt;p style="font-size: 30px"&gt;Font size&lt;/p&gt;
+
+/* Size in centimeters*/
+&lt;p style="font-size: 1cm"&gt;Font size&lt;/p&gt;
+
+/* Size in inches*/
+&lt;p style="font-size: 0.25in"&gt;Font size&lt;/p&gt;
+
+/* Size in percentage of default size*/
+&lt;p style="font-size: 130%"&gt;Font size&lt;/p&gt;
+
+/* Some number times the default font size*/
+&lt;p style="font-size: 2em"&gt;Font size&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="font-size: xx-small">Font size</p>
+        <p style="font-size: x-small">Font size</p>
+        <p style="font-size: small">Font size</p>
+        <p style="font-size: smaller">Font size</p>
+        <p style="font-size: medium">Font size</p>
+        <p style="font-size: large">Font size</p>
+        <p style="font-size: larger">Font size</p>
+        <p style="font-size: x-large">Font size</p>
+        <p style="font-size: xx-large">Font size</p>
+        <p style="font-size: 30px">Font size</p>
+        <p style="font-size: 1cm">Font size</p>
+        <p style="font-size: 0.25in">Font size</p>
+        <p style="font-size: 130%">Font size</p>
+        <p style="font-size: 2em">Font size</p>
+    </div>
+
+    <div class="description">
+        <h3 class="bold">Font Family</h3>
+    </div>
+    <div class="code">
+<span>/*Font with the little "wings" at the edge of each letter*/
+&lt;p style="font-family: serif"&gt;Font-family&lt;/p&gt;
+
+/*Font without the "wings"*/
+&lt;p style="font-family: sans-serif"&gt;Font-family&lt;/p&gt;
+
+/*Comic Sans font*/
+&lt;p style="font-family: 'Comic Sans MS'"&gt;Font-family&lt;/p&gt;
+
+/*Another random font*/
+&lt;p style="font-family: Stencil"&gt;Font-family&lt;/p&gt;
+</span>
+    </div>
+    <div class="display">
+        <p style="font-family: serif">Font-family</p>
+        <p style="font-family: sans-serif">Font-family</p>
+        <p style="font-family: 'Comic Sans MS'">Font-family</p>
+        <p style="font-family: Stencil">Font-family</p>
+    </div>
+
+    <!--Grouped selectors-->
+    <div class="description">
+        Grouping CSS selectors can be a very handy trick. This option allows for the same type of
+        style to be applied to multiple selectors without retyping the statement. Below is the syntax
+        for grouping selectors.
+    </div>
+    <div class="code">
+<span>/*propertyName: value would be applied to all the selectors listed*/
+.cssSelector1, .cssSelector2, .cssSelector3, #id, HTMLElementSelector{
+    propertyName: value;
+}
+</span>
+    </div>
+
+    <div class="description">
+        Now for a real example!
+    </div>
+    <div class="code">
+<span>&lt;!--In another HTML document--&gt;
+
+&lt;p class="dummyClass"&gt;Dummy text for a dummy class...&lt;/p&gt;
+&lt;p id="dummyId"&gt;Dummy text for a dummy id...&lt;/p&gt;
+&lt;p id="dummyId2"&gt;Dummy text for another dummy id...&lt;/p&gt;
+
+<hr>
+/*In a separate CSS file*/
+
+/*only the class, dummyClass, and the id, dummyId2 will be affected by the below CSS statement*/
+.dummyClass, #dummyId2{
+    color: pink;
+}
+</span>
+    </div>
+    <div class="display">
+        <p class="dummyClass">Dummy text for a dummy class...</p>
+        <p id="dummyId">Dummy text for a dummy id...</p>
+        <p id="dummyId2">Dummy text for another dummy id...</p>
+    </div>
+
+    <!-- Context dependant selectors-->
+    <div class="description">
+        Context dependant selectors... order matters. Do you remember
+        nested lists from the HTML section? This is similar to a point. Context dependency
+        is used to describe styling that only appears if the particular element is located in
+        a specific location or situation. You can style just the anchor tags in a navigation bar.
+        Other anchor tags in the page will not follow the styling unless they are children of your
+        navigation bar.
+    </div>
+    <div class="code">
+<span>&lt;!--In another HTML document--&gt;
+
+&lt;div class="dummyClass"&gt;Dummy text for a dummy class... However, this time context dependent selectors are being demonstrated. Starting a new paragraph....&lt;p&gt;NOW! This text should be purple. About to end the paragraph tag.&lt;/p&gt;Yet, I am still within the div tag.&lt;/div&gt;&lt;p&gt;Currently, I am in another paragraph tag, but this text should be neither pink nor purple since it is not associated with a class and does not meet the requirements for any context dependant selectors.&lt;/p&gt;
+
+<hr>
+/*In a separate CSS file*/
+
+/*Any text contained in an element that has the dummyClass should be pink. Any text contained inside a paragraph tag that is itself held within an element that has the dummyClass should be purple.*/
+.dummyClass{
+    color: pink;
+}
+
+.dummyClass p{
+    color: purple;
+}
+</span>
+    </div>
+    <div class="display">
+        <div><!--Tricking the "first-child" styling rule--></div>
+        <div class="dummyClass">Dummy text for a dummy class... However, this time
+        context dependent selectors are being demonstrated. Starting a new paragraph....
+        <p>NOW! This text should be purple. About to end the paragraph tag.</p>Yet, I am
+        still within the div tag.</div>
+        <p>Currently, I am in another paragraph tag, but this text should be neither pink
+        nor purple since it is not associated with a class and does not meet the requirements
+        for any context dependant selectors.</p>
+    </div>
+
+    <!-- Pseudo-classes -->
+    <div class="description">
+        Pseudo-classes describe a specific and unique state of an HTML element.
+        They are often used to style links to other pages. A link may change colors
+        after being visited. Additionally, images may increase in size slightly when
+        the user's mouse is hovering over the given image.
+    </div>
+    <div class="code">
+<span>&lt;!--In another HTML document--&gt;
+
+&lt;div class="box"&gt;&lt;img src="http://www.icon100.com/up/3772/128/425-hand-pointer.png"/&gt;&lt;/div&gt;
+&lt;div class="secretMsg"&gt;Boo!&lt;/div&gt;
+<hr>
+/*In a separate CSS file*/
+
+/*Will render a green box*/
+.box{
+    display: block;
+    width: 128px;
+    height: 128px;
+    background-color: greenyellow;
+}
+
+/*Styling for the message*/
+.secretMsg{
+    font-size: x-large;
+    color: turquoise;
+    display: none; /*hides the message*/
+    text-align: right;
+}
+
+/*While hovering over the box, show the message*/
+/*.box:hover is the pseudo-class + .secretMsg specifies that the secret message is the element to style.*/
+.box:hover + .secretMsg{
+    display: block; /*reveals the message*/
+}
+</span>
+    </div>
+    <div class="display">
+        <div class="box"><img src="http://www.icon100.com/up/3772/128/425-hand-pointer.png"/></div>
+        <div class="secretMsg">Boo!</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JS/Game.js"></script>
+    <link rel="stylesheet" href="../CSS/gameStyle.css">
+</head>
+<body>
+    <a href="index.html" class="homeButton">Home</a>
+    <h3><strong>GameTime</strong></h3>
+    <div class="instructions">A random number will be generated between 0 (inclusive) and 1000(exclusive). Your goal is
+        to guess the digits in the generated number. Ex. Generated number: 835; Correct answers include:
+        835, 853, 583, 538, 358, 385.</div>
+    <div class="gameArea">
+        <table>
+            <thead><tr><td colspan="4">Feeling lucky?</td></tr></thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" class="topRow"><input id="userGuess" type="text" name="userinput" placeholder="Your guess here"/></td>
+                    <td colspan="2" class="topRow"><input type="button" name="submit" value="Submit" onclick="playGame()"></td>
+                </tr>
+                <tr>
+                    <td>Your guess: </td><td><span id="guessOutput">?</span></td>
+                    <td>Number generated: </td><td><span id="randGenOutput">?</span></td>
+                </tr>
+            </tbody>
+            <tfoot><tr><td colspan="4" id="result">Will you win?</td></tr></tfoot>
+        </table>
+    </div>
+</body>
+</html>

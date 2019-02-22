@@ -1,0 +1,150 @@
+/* This CSS document will specify the styles for the various parts of the tutorial pages.
+    The parts are:
+        1) A description - just something other than times new roman
+        2) A code example - dark background, programmer-like text, maybe...multicolored
+        3) A display of the example -> most likely will just style a container to hold the example in
+
+ For the code example section, this link was very helpful in terms of color codes:
+    http://www.eclipsecolorthemes.org/?view=theme&id=14569
+
+ */
+
+:root {
+    --code-background: #2b2b2b;
+    --light-grey: #a9b7c6;
+    --light-grey-bg: rgba(169,183,198,0.5);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 1em;
+    justify-self: center;
+
+    background-color: var(--light-grey-bg);
+    border-radius: 5px;
+
+    font-family: Questrial, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*todo: maybe include syntax highlighting*/
+.code{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:80%;
+    padding: 1em;
+    display: flex;
+    justify-self: center;
+
+    background-color: var(--code-background);
+    border-radius: 5px;
+
+    font-family: Inconsolata, sans-serif;
+    color: var(--light-grey);
+}
+
+.code span{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+}
+
+.inline-code{
+    background-color: var(--code-background);
+    border-radius: 5px;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-family: Inconsolata, sans-serif;
+    color: var(--light-grey);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.description dt{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.display{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline;
+    justify-self: stretch;
+    padding: 1em;
+    min-width: 80%;
+    max-width: 80%;
+
+    border: 2px groove black;
+    border-radius: 2px;
+
+    font-family: Questrial, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.homeButton{
+    left: 10px;
+    top: 10px;
+    height: 1.2em;
+    width: 10%;
+    border-radius: 10px;
+    position: fixed;
+    background-color: var(--light-grey);
+
+    text-decoration: none;
+    text-align: center;
+    color: var(--code-background);
+}
+
+.homeButton:hover{
+    opacity: 0.7;
+}
+
+.display > div:first-child{
+    color: red;
+}
+
+.dummyClass{
+    color: pink;
+}
+
+.dummyClass p{
+    color: purple;
+}
+
+#dummyId{
+    color: black;
+}
+
+#dummyId2{
+    color: pink;
+}
+
+.box{
+    display: block;
+    width: 128px;
+    height: 128px;
+    background-color: greenyellow;
+}
+
+.secretMsg{
+    font-size: x-large;
+    color: turquoise;
+    display: none; /*hides the message*/
+    text-align: right;
+}
+
+.box:hover + .secretMsg{
+    display: block; /*reveals the message*/
+}

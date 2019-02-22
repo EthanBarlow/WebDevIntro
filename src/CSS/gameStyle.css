@@ -1,0 +1,58 @@
+:root {
+    --code-background: #2b2b2b;
+    --light-grey: #a9b7c6;
+    --light-grey-bg: rgba(169,183,198,0.5);
+}
+
+.instructions{
+    width: 50%;
+}
+
+.gameArea{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    child-align: auto;
+}
+
+.homeButton{
+    left: 10px;
+    top: 10px;
+    height: 1.2em;
+    width: 10%;
+    border-radius: 10px;
+    position: fixed;
+    background-color: var(--light-grey);
+
+    text-decoration: none;
+    text-align: center;
+    color: var(--code-background);
+}
+
+.homeButton:hover{
+    opacity: 0.7;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+table{
+    border: black 2px groove;
+    padding: 5px 10px;
+    align-self: inherit;
+}
+
+td{
+    width: 25%;
+    padding: 5px 10px;
+    border: black 2px groove;
+}
+
+thead, tfoot{
+    text-align: center;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Time</title>
+    <link rel="stylesheet" href="../CSS/content.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+</head>
+<body>
+    <a href="index.html" class="homeButton">Home</a>
+    <h1 id="top">Learn some html</h1>
+    <!--Example-->
+    <div class="description">
+        The description of a specific HTML element or methodology will be located in a box like this one.
+    </div>
+    <div class="code">
+        The implementation of the element will appear like this.
+    </div>
+    <div class="display">
+        The resulting document from the code example will be displayed similarly to this.
+    </div>
+
+    <!--HTML definition and document header-->
+    <div class="description">
+        HTML is the acronym of Hyper Text Markup Language which is a language for specifying the content and structure
+        of a web page. In HTML5, an HTML document should start with the following declaration:
+    </div>
+    <div class="code">
+        &lt;!DOCTYPE HTML&gt;
+    </div>
+
+    <!--Types of elements that are usually placed in the head section-->
+    <div class="description">
+        An HTML document is generally divided into two sections: <span class="inline-code"> &lt;head&gt; </span> and <span class="inline-code"> &lt;body&gt; </span>.
+        The following four elements are generally placed in the <span class="inline-code"> &lt;head&gt; </span> section:
+        <dl>
+            <dt><span class="inline-code">&lt;title&gt;My Title Here&lt;/title&gt;</span></dt>
+            <dd>Gives a title and optimizes the search results for a specific web page.</dd>
+            <dt><span class="inline-code">&lt;style&gt;CSS statements&lt;/style&gt;</span></dt>
+            <dd>Defines an embedded CSS sheet</dd>
+            <dt><span class="inline-code">&lt;link rel="stylesheet" type="text/css" href="file/path.css"&gt;</span></dt>
+            <dd>Links the page with an external CSS document.</dd>
+            <dt><span class="inline-code">&lt;meta name="description" content="HTML tutorial"&gt;</span></dt>
+            <dd>Gives information about the page and optimizes the search results for a specific web page.</dd>
+        </dl>
+    </div>
+
+    <!--Internal links-->
+    <div class="description">
+        One part of a web page can be linked to another. This is called an internal link.
+        The location to which you want to link needs to have an id value. Additionally, the
+        word, image, ..., element that will be the link should be surrounded by an anchor
+        tag with a reference to the desired id.
+    </div>
+    <div class="code">
+<span>&lt;!--The section of the page that the user will be sent to upon clicking the internal link.--&gt;
+<br/>&lt;h1 id="top"&gt;Learn some html&lt;/h1&gt;<br/><br/>&lt;!--Other HTML statements fill in this section--&gt;
+<br/>&lt;!--Creating the link. &lt;a&gt; is the anchor tag. "href" specifies the link to go to, and "#" indicates that the link is internal. &lt;/a&gt; closes the anchor tag--&gt;
+<br/>This word ... &lt;a href="#top"&gt;here&lt;/a&gt; ... will take you back to the top of the page.</span>
+    </div>
+    <div class="display">
+        This word ... <a href="#top">here</a> ... will take you back to the top of the page.
+    </div>
+
+    <!--Basic CSS-->
+    <div class="description">
+        Now to make things look nice! We accomplish this by using CSS which stands for Cascading Style Sheets. Here,
+        the basics of CSS will be touched on, but a more complete view can be seen on the <a href="learnCss.html">"Learn CSS"</a> page.
+        The general syntax of a CSS statement follows the pattern shown below.
+        <!--TODO:come back and finish how this link appears-->
+    </div>
+    <div class="code">
+<span>.cssSelector{
+    propertyName: value;
+}</span>
+    </div>
+
+    <!--TODO: Fix the line breaking after the use of <strong></strong>-->
+    <!--3 types of CSS selectors-->
+    <div class="description">
+        There are three types of selectors in CSS. Each with its own unique purpose and use case.
+        <span class="bold">HTML selectors</span> are used to target a specific type of HTML element for styling purposes.
+        <span class="bold">Class selectors</span> are used to style certain parts of a web page that should look the same.
+        <span class="bold">ID selectors</span> are generally used for styling very specific parts of a web page. They are often
+        not applied to many elements.
+    </div>
+    <div class="code">
+<span>/*This is a CSS comment.*/
+/*Syntax is all very similar following the pattern shown in the previous example.*/
+h3{ color: red;} /*Every h3 element will have red text*/
+
+.myClassName{ font-family: sans-serif;} /*Every HTML element containing class="myClassName" will have the specified font-family.*/
+
+#header{ width: 100%;} /*Generally there is only one header on a web page so using an id to target that header works well giving it a width of 100%*/
+</span>
+    </div>
+
+    <!--3 levels of CSS-->
+    <div class="description">
+        Sticking with 3's, there are three levels of CSS. <span class="bold">Inline style</span> uses the <span class="inline-code">style</span>
+        attribute of HTML elements to define the styling of that specific element. This type of styling
+        has the highest priority and will overwrite any other type of styling that would normally
+        affect the element otherwise. <span class="bold">Embedded style sheets</span> live within the <span class="inline-code">&lt;style&gt;</span>
+        and <span class="inline-code">&lt;/style&gt;</span> elements of an HTML document. This segment is usually placed in the
+        aforementioned <span class="inline-code">&lt;head&gt;</span> section of the document. <span class="bold">External style sheets</span>
+        are structured with the same syntax as the embedded style sheets but do not use the <span class="inline-code">&lt;style&gt;</span> elements.
+        All the CSS statements are contained in a separate file with a <span class="inline-code">.css</span> extension.
+        The HTML document looking to use the styling rules then must link in the CSS document.
+    </div>
+
+    <!--span and div elements-->
+    <div class="description">
+        Next, we will discuss two new types of tags: <span class="inline-code">&lt;span&gt;</span><span class="inline-code">&lt;/span&gt;</span>
+        and <span class="inline-code">&lt;div&gt;</span><span class="inline-code">&lt;/div&gt;</span>. Both are "dummy" elements for
+        holding attributes, often style attributes. <span class="inline-code">&lt;span&gt;</span><span class="inline-code">&lt;/span&gt;</span>
+        is an inline element meaning that the content should appear in line with its surrounding elements. On the other
+        hand, <span class="inline-code">&lt;div&gt;</span><span class="inline-code">&lt;/div&gt;</span> is a block element which
+        causes line breaks before the opening tag and after the closing tag.
+    </div>
+    <div class="code">
+<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus &lt;span style="color: orange;"&gt;et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies&lt;/span&gt; nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum &lt;div style="font-family: cursive;"&gt;felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/div&gt; Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</span>
+    </div>
+    <div class="display">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus <span style="color: orange;">et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies</span> nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        Nullam dictum <div style="font-family: cursive;">felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</div> Phasellus viverra nulla ut metus varius laoreet.
+        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
+        dui. Etiam rhoncus.
+    </div>
+
+    <!--CSS pseudo classes-->
+    <div class="description">
+        Next, pseudo classes will be covered. Pseudo classes affect specific situations such as hovering over a link inside of a div.
+        The example here will style the first child of a parent div element with red text.
+    </div>
+
+    <div class="code">
+<span>&lt;style&gt;
+    div::first-child{
+        color: red;
+    }
+&lt;/style&gt;
+&lt;div&gt;
+    &lt;div&gt;
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciesnec, pellentesque eu, pretium quis, sem.
+    &lt;/div&gt;
+    &lt;div&gt;
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+    &lt;/div&gt;
+    &lt;div&gt;
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+    &lt;/div&gt;
+&lt;/div&gt;</span>
+    </div>
+
+    <div class="display">
+        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultriciesnec, pellentesque eu, pretium quis, sem.</div> <div>Nulla consequat massa quis enim. Donec pede justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</div>
+        <div>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
+        dui. Etiam rhoncus.</div>
+    </div>
+
+    <!--Nested lists-->
+    <div class="description">
+        The last topic to cover in this lesson is lists and nested lists. Two types of lists that we will cover are
+        unordered lists (<span class="inline-code">&lt;ul&gt;</span><span class="inline-code">&lt;/ul&gt;</span>) and ordered lists
+        (<span class="inline-code">&lt;ol&gt;</span><span class="inline-code">&lt;/ol&gt;</span>). Inside each of these list types
+        are the list items marked with <span class="inline-code">&lt;li&gt;</span> and ending with <span class="inline-code">&lt;/li&gt;</span>
+        It is also possible to put lists into a nested form such as an ordered list inside of an unordered list. This
+        case will be shown below.
+    </div>
+
+    <div class="code">
+<span>/* Nested lists */
+&lt;ul&gt; &lt;!--Unordered list--&gt;
+    &lt;li&gt; &lt;!--list item--&gt;
+        &lt;span class="bold"&gt;First List&lt;/span&gt; &lt;!--bold "title"--&gt;
+        &lt;ol&gt; &lt;!--ordered list--&gt;
+            &lt;li&gt;First item in first list&lt;/li&gt;
+            &lt;li&gt;Second item in first list&lt;/li&gt;
+        &lt;/ol&gt; &lt;!--end of ordered list--&gt;
+    &lt;/li&gt; &lt;!--end of list item--&gt;
+    &lt;li&gt; &lt;!--list item--&gt;
+        &lt;span class="bold"&gt;Second List&lt;/span&gt; &lt;!--bold "title"--&gt;
+        &lt;ol&gt; &lt;!--ordered list--&gt;
+            &lt;li&gt;First item in second list&lt;/li&gt;
+            &lt;li&gt;Second item in second list&lt;/li&gt;
+        &lt;/ol&gt; &lt;!--end of ordered list--&gt;
+    &lt;/li&gt; &lt;!--end of list item--&gt;
+&lt;/ul&gt; &lt;!--end of unordered list--&gt;
+</span>
+    </div>
+
+    <div class="display">
+        <ul> <!--Unordered list-->
+            <li> <!--list item-->
+                <span class="bold">First List</span><!--bold "title"-->
+                <ol><!--ordered list-->
+                    <li>First item in first list</li>
+                    <li>Second item in first list</li>
+                </ol><!--end of ordered list-->
+            </li><!--end of list item-->
+            <li> <!--list item-->
+                <span class="bold">Second List</span><!--bold "title"-->
+                <ol><!--ordered list-->
+                    <li>First item in second list</li>
+                    <li>Second item in second list</li>
+                </ol><!--end of ordered list-->
+            </li><!--end of list item-->
+        </ul><!--end of unordered list-->
+    </div>
+
+</body>
+</html>
